@@ -8,9 +8,9 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/DynamicPHPtutorial/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-              <a href="/DynamicPHPtutorial/about.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-              <a href="/DynamicPHPtutorial/contact.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+              <a href="/DynamicPHPtutorial/" class="<?= $_SERVER['REQUEST_URI'] === '/DynamicPHPtutorial/' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+              <a href="/DynamicPHPtutorial/about/" class="<?= $_SERVER['REQUEST_URI'] === '/DynamicPHPtutorial/about/' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+              <a href="/DynamicPHPtutorial/contact/" class="<?= $_SERVER['REQUEST_URI'] === '/DynamicPHPtutorial/contact/' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
             </div>
           </div>
         </div>
